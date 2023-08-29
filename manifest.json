@@ -1,0 +1,106 @@
+{
+  "id": "2f9f7193-bef7-427f-b0cb-c0c7df35faf8",
+  "manifestVersion": 2,
+  "displayName": "Teams Button",
+  "vendor": "Jeremy Willans",
+  "email": "jwillans@cisco.com",
+  "description": "Teams Button is a Workspace Integration designed to add a Panel on the UI allowing to join MS Teams (CVI) and WebRTC Meetings",
+  "descriptionUrl": "https://github.com/jeremywillans/wi-teams-button",
+  "availability": "org_private",
+  "tocUrl": "",
+  "apiAccess": [
+    {
+      "scope": "spark-admin:devices_read",
+      "access": "required",
+      "role": "id_readonly_admin"
+    },
+    {
+      "scope": "spark-admin:workspaces_read",
+      "access": "required",
+      "role": "id_readonly_admin"
+    },
+    {
+      "scope": "spark:xapi_statuses",
+      "access": "required"
+    },
+    {
+      "scope": "spark:xapi_commands",
+      "access": "required"
+    },
+    {
+      "scope": "spark-admin:devices_write",
+      "access": "required"
+    }
+  ],
+  "xapiAccess": {
+    "status": [
+      {
+        "path": "SystemUnit.State.System",
+        "access": "required"
+      }
+    ],
+    "commands": [
+      {
+        "path": "UserInterface.Extensions.List",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Extensions.Panel.Save",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Extensions.Panel.Close",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Extensions.Panel.Remove",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Message.TextInput.Display",
+        "access": "required"
+      },
+      {
+        "path": "Dial",
+        "access": "required"
+      },
+      {
+        "path": "WebRTC.Join",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Message.Prompt.Display",
+        "access": "required"
+      },
+      {
+        "path": "Audio.Sound.Play",
+        "access": "required"
+      }
+    ],
+    "events": [
+      {
+        "path": "BootEvent",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Extensions.Widget.Action",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Message.TextInput.Response",
+        "access": "required"
+      },
+      {
+        "path": "CallDisconnect",
+        "access": "required"
+      },
+      {
+        "path": "UserInterface.Message.TextInput.Clear",
+        "access": "required"
+      }
+    ]
+  },
+  "provisioning": {
+    "type": "manual"
+  }
+}
