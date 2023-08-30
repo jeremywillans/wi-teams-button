@@ -15,12 +15,12 @@ const { cleanEnv, str } = require('envalid');
 const logger = require('./src/logger')('app');
 const utils = require('./src/utils');
 const { TeamsButton, minVersion } = require('./src/teamsButton');
-const { version } = require('./package.json');
+const { name, version } = require('./package.json');
 
 // Process ENV Parameters
 const e = cleanEnv(process.env, {
   // Integration Options
-  DEVICE_TAG: str({ default: 'wi-teams-button' }),
+  DEVICE_TAG: str({ default: name }),
   WI_LOGGING: str({ default: 'error' }),
   CLIENT_ID: str(),
   CLIENT_SECRET: str(),
