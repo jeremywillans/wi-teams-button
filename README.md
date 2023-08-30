@@ -59,11 +59,11 @@ These variables can be individually defined in Docker, or loaded as an `.env` fi
 | WEBEXAPIS_BASE_URL | no* | string | ` ` | Decoded Webex APIs Base Url from the Activation Code
 | APP_URL | no* | ` ` | string | Decoded App Url from the Activation Code
 | **---**
-| DEVICE_TAG | no | string | `wi-room-release` | Device Tag used to determine which devices to process
+| DEVICE_TAG | no | string | `wi-teams-button` | Device Tag used to determine which devices to process
 | **Logging Settings**
 | LOG_DETAILED | no | bool | `true` | Enable detailed logging
 | CONSOLE_LEVEL | no | bool | `info` | Logging level exposed to console
-| APP_NAME | no | string | `wi-room-release` | App Name used for logging service
+| APP_NAME | no | string | `wi-teams-button` | App Name used for logging service
 | SYSLOG_ENABLED | no | bool | `false` | Enable external syslog server
 | SYSLOG_HOST | no | string | `syslog` | Destination host for syslog server
 | SYSLOG_PORT | no | num | `514` | Destination port for syslog server
