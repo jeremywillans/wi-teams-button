@@ -85,7 +85,7 @@ async function processDevice(i, d, deviceId, deviceObj) {
     await d[deviceId].configureCodec();
   } catch (error) {
     logger.warn(`${d[deviceId].id}: Unable to process Device!`);
-    logger.debug(error.message);
+    logger.debug(`${d[deviceId].id}: ${error.message}`);
   }
 }
 
