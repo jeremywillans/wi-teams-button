@@ -15,6 +15,7 @@ const { cleanEnv, str } = require('envalid');
 const logger = require('./src/logger')('app');
 const utils = require('./src/utils');
 const { TeamsButton, minVersion } = require('./src/teamsButton');
+const { version } = require('./package.json');
 
 // Process ENV Parameters
 const e = cleanEnv(process.env, {
@@ -128,6 +129,7 @@ async function processDevices(i, d) {
 
 // Init integration
 async function init(json) {
+  logger.info(`Teams Button Workspace Integration, v${version}`);
   let i;
   const d = {}; // Device Entities Object
   // Process integration credentials

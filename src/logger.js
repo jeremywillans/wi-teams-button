@@ -133,7 +133,12 @@ function WinstonLogger(component) {
     transports,
   });
 
-  if (component === 'app') logger.info(`Logging destinations enabled: ${destinations}`);
+  if (component === 'app') {
+    setTimeout(() => {
+      // added minor delay to show app log entry first
+      logger.info(`Logging destinations enabled: ${destinations}`);
+    }, 100);
+  }
 
   // Streaming allows it to stream the logs back from the defined transports
   logger.stream = {
