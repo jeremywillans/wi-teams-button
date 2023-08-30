@@ -1,5 +1,7 @@
 # wi-teams-button
 
+## Teams Button Workspace Integration
+
 Designed for customers who have an existing CVI Subscription.
 
 Adds a Microsoft Teams button on the UI allowing you to join both CVI and WebRTC Meetings.
@@ -39,8 +41,6 @@ This has been refactored from a per-device macro to instead run from a central l
     ```
 
 2. Review the logs from the Integration output to confirm no errors encountered
-
-
 
 ### Environmental Variables
 
@@ -114,4 +114,4 @@ In case you've found a bug, please [open an issue on GitHub](../../issues).
 
 ## Disclaimer
 
-This script is NOT guaranteed to be bug free and production quality.
+This application is provided as a sample only is NOT guaranteed to be bug free and production quality.
