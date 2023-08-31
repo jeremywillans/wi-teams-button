@@ -1,7 +1,7 @@
 {
-  "name": "wi-room-release",
+  "name": "wi-teams-button",
   "version": "0.0.1",
-  "description": "Workspace Integration for Room Release",
+  "description": "Teams Button Workspace Integration",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
