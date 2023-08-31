@@ -12,6 +12,9 @@ This has been refactored from a per-device macro to instead run from a central l
 
 ![img1.png](img/img1.png)
 
+Periodic check of devices occurs every 30 minutes (on the half/hour intervals) to detect if a new device is un/tagged, otherwise devices are re/processed on integration restart.
+**Note:** If you untag a device and restart the integration, the panel will **not** be removed from the device. For automated panel cleanup, untag any intended devices and wait for the periodic check to occur.
+
 ## Prerequisites
 
 1. Navigate to Workspace Integrations in [Control Hub](https://admin.webex.com/workspaces/integrations)
