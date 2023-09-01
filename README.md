@@ -78,7 +78,7 @@ These variables can be individually defined in Docker, or loaded as an `.env` fi
 | GLOBAL_AGENT_HTTP_PROXY | no | string | ` ` | Container HTTP Proxy Server (format `http://<ip or fqdn>:<port>`)
 | GLOBAL_AGENT_NO_PROXY | no | string | ` ` | Comma Separated List of excluded proxy domains (Supports wildcards)
 | **Teams Button**
-| TB_CUSTOMER_TENANT | **yes** | bool | ` ` | Customer CVI tenant
+| TB_CUSTOMER_TENANT | **yes** | bool | ` ` | Customer CVI tenant (include fill domain, such as example@m.webex.com)
 | TB_CUSTOMER_TEXT | no | string | `Internal Meeting` | Text shown for Internal meeting option
 | TB_BUTTON_TEXT | no | string | `Microsoft Teams` | Text to display on button
 | TB_PANEL_ID | no | string | `60` | Panel identifier
