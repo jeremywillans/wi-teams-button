@@ -9,7 +9,7 @@ const logger = require('./logger')(__filename.slice(__dirname.length + 1, -3));
 
 // Process ENV Parameters
 const e = cleanEnv(process.env, {
-  LOG_DETAILED: bool({ default: false, devDefault: true }),
+  LOG_DETAILED: bool({ default: true }),
   LOG_UNKNOWN_RESPONSES: bool({ default: false, devDefault: true }),
   TB_CUSTOMER_TENANT: str({ devDefault: 'acme@m.webex.com' }),
   TB_CUSTOMER_TEXT: str({ default: 'Internal Scheduled Meeting', devDefault: 'ACME Scheduled Meeting' }),
